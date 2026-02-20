@@ -1,0 +1,1 @@
+{"config":{"lang":["en"],"separator":"[\\s\\-,:!=\\[\\]()\"/]+|\\.(?!\\d)|&[lg]t;","pipeline":["stopWordFilter"]},"docs":[{"location":"api-reference/","title":"API Reference","text":""},{"location":"concepts/","title":"Concepts","text":""}]}
