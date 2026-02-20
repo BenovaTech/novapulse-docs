@@ -1,0 +1,50 @@
+# .github/workflows/ci.yml
+# ─────────────────────────────────────────────────────────────
+# NovaPulse Docs — Continuous Deployment
+# Builds and deploys MkDocs site to GitHub Pages on every push
+# ─────────────────────────────────────────────────────────────
+ 
+name: Deploy Documentation
+ 
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:  # allows manual trigger from GitHub UI
+ 
+permissions:
+  contents: write
+ 
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+ 
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # needed for git-revision-date plugin
+ 
+      - name: Configure Git credentials
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+ 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+ 
+      - name: Cache MkDocs dependencies
+        uses: actions/cache@v4
+        with:
+          key: mkdocs-${{ hashFiles('requirements.txt') }}
+          path: ~/.cache/pip
+          restore-keys: mkdocs-
+ 
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+ 
+      - name: Build and deploy
+        run: mkdocs gh-deploy --force
+
