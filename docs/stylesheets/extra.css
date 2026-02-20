@@ -1,0 +1,48 @@
+/* ──────────────────────────────────────────────────────────── */
+/* NovaPulse Custom Theme                                        */
+/* ──────────────────────────────────────────────────────────── */
+ 
+:root {
+  /* NovaPulse brand blue */
+  --md-primary-fg-color:          #1B4F8A;
+  --md-primary-fg-color--light:   #2E75B6;
+  --md-primary-fg-color--dark:    #0D2A4E;
+  --md-accent-fg-color:           #1E6FD9;
+}
+ 
+/* Dark mode overrides */
+[data-md-color-scheme='slate'] {
+  --md-primary-fg-color:          #2E75B6;
+  --md-primary-fg-color--light:   #4A90D9;
+  --md-default-bg-color:          #0D1117;
+  --md-default-fg-color:          #E6EDF3;
+  --md-code-bg-color:             #161B22;
+}
+ 
+/* Improve code block readability */
+.md-typeset code {
+  border-radius: 4px;
+  font-size: 0.875em;
+}
+ 
+/* API method badges */
+.api-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75em;
+  font-weight: 700;
+  margin-right: 8px;
+}
+.badge-post   { background: #22c55e; color: #fff; }
+.badge-get    { background: #3b82f6; color: #fff; }
+.badge-patch  { background: #f59e0b; color: #fff; }
+.badge-delete { background: #ef4444; color: #fff; }
+ 
+/* Parameter tables */
+.param-table th { background-color: var(--md-primary-fg-color); color: #fff; }
+ 
+/* Wider content area for API reference pages */
+.md-grid { max-width: 1440px; }
+
