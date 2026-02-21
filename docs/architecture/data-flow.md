@@ -15,7 +15,7 @@ via the API.
 
 ```mermaid
 sequenceDiagram
-  participant Client
+  participant Client as Client
   participant Gateway as API Gateway
   participant Store as Audio Store
   participant Pipeline as AI Pipeline
@@ -23,7 +23,7 @@ sequenceDiagram
   participant Webhook as Webhook Dispatcher
 
   Client->>Gateway: POST /v1/audio/ingest
-  Gateway->>Gateway: Authenticate and validate request
+  Gateway->>Gateway: Authenticate and validate
   Gateway->>Store: Store audio file (encrypted)
   Gateway-->>Client: 202 Accepted, job_id returned
 

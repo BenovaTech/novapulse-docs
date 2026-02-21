@@ -36,9 +36,9 @@ NovaPulse delivers its capabilities in three progressive phases:
 flowchart LR
   A[Phase 1 Structured Intelligence] --> B[Phase 2 Real-Time Analytics] --> C[Phase 3 Autonomous Voice Agents]
 
-  style A fill:#1B4F8A,color:#fff
-  style B fill:#1E6FD9,color:#fff
-  style C fill:#155724,color:#fff
+  style A fill:#0d6e6e,stroke:#5eead4,stroke-width:2px,color:#ffffff
+  style B fill:#14b8a6,stroke:#5eead4,stroke-width:2px,color:#ffffff
+  style C fill:#065f46,stroke:#5eead4,stroke-width:2px,color:#ffffff
 ```
 
 ### Phase 1 — Structured intelligence (GA)

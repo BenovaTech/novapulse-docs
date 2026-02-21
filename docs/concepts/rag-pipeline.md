@@ -35,9 +35,14 @@ flowchart LR
   D --> E[Augment LLM prompt with context]
   E --> F[LLM generates grounded response]
   F --> G[Response with source citations]
- 
-  style A fill:#1B4F8A,color:#fff
-  style G fill:#155724,color:#fff
+
+  style A fill:#0f2027,color:#ffffff,stroke:#0d6e6e
+  style B fill:#0d6e6e,color:#ffffff,stroke:#0d6e6e
+  style C fill:#0d6e6e,color:#ffffff,stroke:#0d6e6e
+  style D fill:#14b8a6,color:#0f2027,stroke:#14b8a6
+  style E fill:#14b8a6,color:#0f2027,stroke:#14b8a6
+  style F fill:#065f46,color:#ffffff,stroke:#065f46
+  style G fill:#065f46,color:#ffffff,stroke:#065f46
 ```
  
 ### Step 1: Retrieve

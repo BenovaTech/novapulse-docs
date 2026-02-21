@@ -1,48 +1,289 @@
-/* ──────────────────────────────────────────────────────────── */
-/* NovaPulse Custom Theme                                        */
-/* ──────────────────────────────────────────────────────────── */
- 
+/* ================================================================
+   NovaPulse Documentation — Teal & Slate Theme
+   MkDocs Material custom CSS
+   ================================================================ */
+
+/* ── Brand color tokens ─────────────────────────────────────────── */
 :root {
-  /* NovaPulse brand blue */
-  --md-primary-fg-color:          #1B4F8A;
-  --md-primary-fg-color--light:   #2E75B6;
-  --md-primary-fg-color--dark:    #0D2A4E;
-  --md-accent-fg-color:           #1E6FD9;
+  --md-primary-fg-color:        #0d6e6e;
+  --md-primary-fg-color--light: #14b8a6;
+  --md-primary-fg-color--dark:  #0f2027;
+  --md-accent-fg-color:         #14b8a6;
+
+  --np-dark:    #0f2027;
+  --np-mid:     #0d6e6e;
+  --np-teal:    #14b8a6;
+  --np-light:   #5eead4;
+  --np-pale:    #f0fdfa;
+  --np-green:   #065f46;
+  --np-text:    #0f2027;
 }
- 
-/* Dark mode overrides */
-[data-md-color-scheme='slate'] {
-  --md-primary-fg-color:          #2E75B6;
-  --md-primary-fg-color--light:   #4A90D9;
-  --md-default-bg-color:          #0D1117;
-  --md-default-fg-color:          #E6EDF3;
-  --md-code-bg-color:             #161B22;
+
+/* ── Dark mode overrides ────────────────────────────────────────── */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        #14b8a6;
+  --md-primary-fg-color--light: #5eead4;
+  --md-primary-fg-color--dark:  #0d6e6e;
+  --md-accent-fg-color:         #5eead4;
+  --md-default-bg-color:        #0a1628;
+  --md-default-fg-color:        #e2e8f0;
+  --md-code-bg-color:           #0f1e2e;
 }
- 
-/* Improve code block readability */
+
+/* ── Navigation header ──────────────────────────────────────────── */
+.md-header {
+  background: linear-gradient(135deg, #0f2027 0%, #0d6e6e 100%);
+  box-shadow: 0 2px 12px rgba(13,110,110,0.25);
+}
+
+.md-header__title {
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+/* ── Navigation tabs ────────────────────────────────────────────── */
+.md-tabs {
+  background: rgba(13, 32, 39, 0.95);
+  backdrop-filter: blur(8px);
+}
+
+.md-tabs__link--active,
+.md-tabs__link:hover {
+  color: #5eead4 !important;
+}
+
+/* ── Sidebar ────────────────────────────────────────────────────── */
+.md-nav__link--active {
+  color: #0d6e6e !important;
+  font-weight: 600;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link--active {
+  color: #14b8a6 !important;
+}
+
+/* ── Headings ───────────────────────────────────────────────────── */
+.md-typeset h1 {
+  color: #0f2027;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  border-bottom: 3px solid #14b8a6;
+  padding-bottom: 12px;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1 {
+  color: #f0fdfa;
+  border-bottom-color: #0d6e6e;
+}
+
+.md-typeset h2 {
+  color: #0d6e6e;
+  font-weight: 700;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h2 {
+  color: #14b8a6;
+}
+
+.md-typeset h3 {
+  color: #0f2027;
+  font-weight: 600;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h3 {
+  color: #5eead4;
+}
+
+/* ── Links ──────────────────────────────────────────────────────── */
+.md-typeset a {
+  color: #0d6e6e;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.md-typeset a:hover {
+  color: #14b8a6;
+  border-bottom-color: #14b8a6;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a {
+  color: #14b8a6;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a:hover {
+  color: #5eead4;
+  border-bottom-color: #5eead4;
+}
+
+/* ── Code blocks ────────────────────────────────────────────────── */
 .md-typeset code {
+  background: #e8faf7;
+  color: #0d6e6e;
   border-radius: 4px;
   font-size: 0.875em;
+  padding: 1px 5px;
 }
- 
-/* API method badges */
+
+[data-md-color-scheme="slate"] .md-typeset code {
+  background: #0f2027;
+  color: #5eead4;
+}
+
+.md-typeset pre {
+  border-left: 4px solid #14b8a6;
+  border-radius: 0 8px 8px 0;
+}
+
+[data-md-color-scheme="slate"] .md-typeset pre {
+  border-left-color: #0d6e6e;
+}
+
+/* ── Tables ─────────────────────────────────────────────────────── */
+.md-typeset table:not([class]) th {
+  background: #0d6e6e;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.md-typeset table:not([class]) tr:nth-child(even) {
+  background: #f0fdfa;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background: #0f2027;
+  color: #5eead4;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tr:nth-child(even) {
+  background: rgba(13,110,110,0.08);
+}
+
+/* ── Admonitions ────────────────────────────────────────────────── */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 8px;
+  border-left-width: 4px;
+}
+
+.md-typeset .admonition.note,
+.md-typeset details.note {
+  border-left-color: #14b8a6;
+  background: #f0fdfa;
+}
+
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+  border-left-color: #0d6e6e;
+  background: #ecfdf5;
+}
+
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+  border-left-color: #f59e0b;
+  background: #fffbeb;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.note {
+  background: rgba(20,184,166,0.06);
+}
+
+/* ── API method badges ──────────────────────────────────────────── */
 .api-badge {
   display: inline-block;
-  padding: 2px 8px;
-  border-radius: 4px;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.75em;
+  padding: 3px 10px;
+  border-radius: 5px;
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-size: 0.78em;
   font-weight: 700;
-  margin-right: 8px;
+  margin-right: 10px;
+  letter-spacing: 0.5px;
+  vertical-align: middle;
 }
-.badge-post   { background: #22c55e; color: #fff; }
-.badge-get    { background: #3b82f6; color: #fff; }
-.badge-patch  { background: #f59e0b; color: #fff; }
-.badge-delete { background: #ef4444; color: #fff; }
- 
-/* Parameter tables */
-.param-table th { background-color: var(--md-primary-fg-color); color: #fff; }
- 
-/* Wider content area for API reference pages */
-.md-grid { max-width: 1440px; }
 
+.badge-post   { background: #0d6e6e; color: #ffffff; }
+.badge-get    { background: #14b8a6; color: #0f2027; }
+.badge-patch  { background: #f59e0b; color: #ffffff; }
+.badge-delete { background: #ef4444; color: #ffffff; }
+
+/* ── Content tabs ───────────────────────────────────────────────── */
+.md-typeset .tabbed-labels > label {
+  color: #0d6e6e;
+  font-weight: 500;
+}
+
+.md-typeset .tabbed-labels > label:hover {
+  color: #14b8a6;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .tabbed-labels > label {
+  color: #5eead4;
+}
+
+/* ── Footer ─────────────────────────────────────────────────────── */
+.md-footer {
+  background: #0f2027;
+}
+
+.md-footer-meta {
+  background: #0a1a1a;
+}
+
+/* ── Search ─────────────────────────────────────────────────────── */
+.md-search__form {
+  border-radius: 8px;
+}
+
+/* ── Mermaid diagrams ───────────────────────────────────────────── */
+/* Force readable Mermaid output in both modes */
+.mermaid svg {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* ── Wider content for API pages ────────────────────────────────── */
+.md-grid {
+  max-width: 1400px;
+}
+
+/* ── TOC active link ────────────────────────────────────────────── */
+.md-nav--secondary .md-nav__link--active {
+  color: #0d6e6e;
+}
+
+/* ── Back to top button ─────────────────────────────────────────── */
+.md-top {
+  background: #0d6e6e;
+  color: #ffffff;
+}
+
+.md-top:hover {
+  background: #14b8a6;
+}
+
+/* ── Tag / status badges ────────────────────────────────────────── */
+.md-typeset .md-status {
+  color: #14b8a6;
+}
+
+/* ── Mermaid diagram overrides ──────────────────────────────────── */
+:root > * {
+  --md-mermaid-node-bg-color:                #0d6e6e;
+  --md-mermaid-node-fg-color:                #ffffff;
+  --md-mermaid-edge-color:                   #14b8a6;
+  --md-mermaid-label-bg-color:               #0f2027;
+  --md-mermaid-label-fg-color:               #ffffff;
+  --md-mermaid-sequence-actor-bg-color:      #0d6e6e;
+  --md-mermaid-sequence-actor-fg-color:      #ffffff;
+  --md-mermaid-sequence-actor-border-color:  #14b8a6;
+  --md-mermaid-sequence-loop-bg-color:       #0f2027;
+  --md-mermaid-sequence-loop-fg-color:       #ffffff;
+  --md-mermaid-sequence-loop-border-color:   #14b8a6;
+  --md-mermaid-sequence-note-bg-color:       #14b8a6;
+  --md-mermaid-sequence-note-fg-color:       #0f2027;
+  --md-mermaid-sequence-number-bg-color:     #14b8a6;
+  --md-mermaid-sequence-number-fg-color:     #0f2027;
+  --md-mermaid-sequence-message-fg-color:    #0f2027;
+  --md-mermaid-sequence-message-line-color:  #0d6e6e;
+}

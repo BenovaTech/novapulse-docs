@@ -15,34 +15,34 @@ platform's core components and how they work together.
 
 ```mermaid
 flowchart TB
-  subgraph Clients
+  subgraph Clients["Clients"]
     A1[Developer API]
     A2[SaaS Dashboard]
     A3[Webhook Consumer]
   end
 
-  subgraph Ingestion Layer
+  subgraph Ingestion["Ingestion Layer"]
     B1[REST API Gateway]
     B2[Audio Validation]
     B3[Secure Audio Store]
   end
 
-  subgraph AI Processing Layer
+  subgraph Processing["AI Processing Layer"]
     C1[ASR Engine]
     C2[Speaker Diarization]
-    C3[NER and PII Detection]
+    C3[NER & PII Detection]
     C4[Sentiment Analysis]
     C5[AI Summarization]
     C6[Vector Embedding]
   end
 
-  subgraph Storage Layer
+  subgraph Storage["Storage Layer"]
     D1[Transcript Store]
     D2[Vector Index]
     D3[Insights Store]
   end
 
-  subgraph Delivery Layer
+  subgraph Delivery["Delivery Layer"]
     E1[Results API]
     E2[Webhook Dispatcher]
     E3[Analytics Dashboard]
@@ -60,8 +60,11 @@ flowchart TB
   E1 --> Clients
   E2 --> A3
 
-  style Clients fill:#1B4F8A,color:#fff
-  style AI Processing Layer fill:#155724,color:#fff
+  style Clients fill:#0f2027,color:#ffffff,stroke:#0d6e6e
+  style Ingestion fill:#0d3a3a,color:#ffffff,stroke:#0d6e6e
+  style Processing fill:#083d2a,color:#ffffff,stroke:#065f46
+  style Storage fill:#0d3a3a,color:#ffffff,stroke:#0d6e6e
+  style Delivery fill:#0a2a2a,color:#ffffff,stroke:#0d6e6e
 ```
 
 ---
