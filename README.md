@@ -80,7 +80,7 @@ to the `gh-pages` branch.
  
 Written and maintained by **Houda Benlemmouden**, Technical Writer.
 This is a portfolio project demonstrating technical writing methodology
-for an AI SaaS platform — docs-as-code workflow, API documentation,
+for an AI SaaS platform: docs-as-code workflow, API documentation,
 conceptual guides, and information architecture.
  
 - LinkedIn: [linkedin.com/in/houdab86](https://linkedin.com/in/houdab86)

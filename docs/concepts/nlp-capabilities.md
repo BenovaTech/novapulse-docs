@@ -104,10 +104,10 @@ Beyond language, NovaPulse measures conversation dynamics:
 
 | Metric | Description |
 |---|---|
-| **Silence ratio** | Proportion of the call spent in silence — high values indicate hold time or confusion |
+| **Silence ratio** | Proportion of the call spent in silence, high values indicate hold time or confusion |
 | **Interruption count** | Number of times either speaker interrupted the other |
-| **Talk ratio** | Proportion of speaking time per speaker — helps identify agent-dominated calls |
-| **Average response time** | Mean time between speakers — long gaps may indicate confusion or hesitation |
+| **Talk ratio** | Proportion of speaking time per speaker, it helps identify agent-dominated calls |
+| **Average response time** | Mean time between speakers, long gaps may indicate confusion or hesitation |
 
 ---
 

@@ -296,7 +296,7 @@ from actual conversation data rather than post-call surveys.
 
 Two errors you will commonly encounter:
 
-**Job still processing — 404:**
+**Job still processing - 404:**
 
 ```json
 {
@@ -311,7 +311,7 @@ Two errors you will commonly encounter:
 Always check job status before retrieving results. Do not assume
 a job is complete based on elapsed time alone.
 
-**Pipeline mismatch — 403:**
+**Pipeline mismatch - 403:**
 
 ```json
 {

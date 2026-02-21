@@ -41,7 +41,7 @@ flowchart LR
   style C fill:#065f46,stroke:#5eead4,stroke-width:2px,color:#ffffff
 ```
 
-### Phase 1 — Structured intelligence (GA)
+### Phase 1: Structured intelligence (GA)
 
 Upload recorded audio and receive structured insights: speaker-attributed
 transcripts, sentiment analysis, AI-generated summaries, and PII redaction.
@@ -51,7 +51,7 @@ Delivered through a REST API and SaaS dashboard.
 enablement, HR, and healthcare providers who need to analyze recorded
 conversations at scale.
 
-### Phase 2 — Real-time analytics (Beta)
+### Phase 2: Real-time analytics (Beta)
 
 Integrate with live audio streams to receive transcription, sentiment scoring,
 and behavioral alerts during an ongoing conversation with latency under
@@ -60,7 +60,7 @@ and behavioral alerts during an ongoing conversation with latency under
 **Who it's for:** call center supervisors, quality assurance teams, and
 compliance officers who need live visibility into conversations.
 
-### Phase 3 — Autonomous voice agents (Planned)
+### Phase 3: Autonomous voice agents (Planned)
 
 Deploy AI voice agents capable of managing full conversations independently:
 understanding context, responding dynamically, executing tasks, and escalating
@@ -88,10 +88,10 @@ voice interactions in support, sales, or HR workflows.
 NovaPulse is built on a cloud-native, multi-tenant architecture with four
 core layers:
 
-- **Ingestion layer** — Accepts audio via REST API or real-time stream
-- **AI processing layer** — Transcription, diarization, NLP, and summarization
-- **Storage layer** — Encrypted audio storage and vector-indexed transcript store
-- **Delivery layer** — REST API, webhooks, and dashboard
+- **Ingestion layer** - Accepts audio via REST API or real-time stream
+- **AI processing layer** - Transcription, diarization, NLP, and summarization
+- **Storage layer** - Encrypted audio storage and vector-indexed transcript store
+- **Delivery layer** - REST API, webhooks, and dashboard
 
 See [System Architecture](../architecture/system-overview.md) for a full
 technical breakdown.

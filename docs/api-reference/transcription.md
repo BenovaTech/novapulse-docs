@@ -21,7 +21,7 @@ detail. Transcription is available after the job status is `completed`.
 
 - A valid API key with `transcription:read` permission
 - A completed job ID from the [Audio Ingestion API](audio-ingestion.md)
-- Job status must be `completed` — polling a job still in `processing` returns `404`
+- Job status must be `completed` . Polling a job still in `processing` returns `404`
 
 ---
 
@@ -52,7 +52,7 @@ detail. Transcription is available after the job status is `completed`.
       -H "Authorization: Bearer nvp_live_abc123..."
     ```
 
-=== "cURL — SRT format"
+=== "cURL SRT format"
     ```bash
     curl "https://api.novapulse.io/v1/transcriptions/job_9f3c2a1b4e7d?format=srt" \
       -H "Authorization: Bearer nvp_live_abc123..."
@@ -160,7 +160,7 @@ attributed to a single speaker.
 |---|---|
 | `json` | Programmatic processing, integration with downstream systems |
 | `srt` | Subtitle files for video players |
-| `vtt` | Web Video Text Tracks — for use in HTML5 `<video>` elements |
+| `vtt` | Web Video Text Tracks, for use in HTML5 `<video>` elements |
 | `txt` | Plain text, no timestamps or speaker labels |
 
 ---

@@ -15,7 +15,7 @@ as a Bearer token in the `Authorization` header of every request.
 1. Log in to the [NovaPulse dashboard](https://app.novapulse.io).
 2. Navigate to **Settings → API Keys**.
 3. Click **Generate new key**.
-4. Copy the key immediately — it is shown only once.
+4. Copy the key immediately, it is shown only once.
  
 !!! warning "Keep your API key secure"
     Never commit API keys to source control or expose them in

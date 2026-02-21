@@ -48,13 +48,13 @@ Sentiment analysis is available when the job was processed with
 
 ## Request example
 
-=== "cURL — sentiment only"
+=== "cURL sentiment only"
     ```bash
     curl "https://api.novapulse.io/v1/insights/job_9f3c2a1b4e7d?type=sentiment" \
       -H "Authorization: Bearer nvp_live_abc123..."
     ```
 
-=== "cURL — customer sentiment only"
+=== "cURL customer sentiment only"
     ```bash
     curl "https://api.novapulse.io/v1/insights/job_9f3c2a1b4e7d?type=sentiment&speaker=Customer" \
       -H "Authorization: Bearer nvp_live_abc123..."

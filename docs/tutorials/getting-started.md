@@ -18,8 +18,8 @@ structured insights from a real audio file.
  
 Before you begin:
  
-- [ ] A NovaPulse account — [sign up free](https://app.novapulse.io/signup)
-- [ ] An API key — see [Authentication](../api-reference/authentication.md)
+- [ ] A NovaPulse account - [sign up free](https://app.novapulse.io/signup)
+- [ ] An API key - see [Authentication](../api-reference/authentication.md)
 - [ ] cURL installed (included on Windows 10+ and macOS)
 - [ ] An audio file in MP3 or WAV format (minimum 10 seconds)
  

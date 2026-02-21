@@ -10,7 +10,7 @@ searches call transcripts for *"cancellation"*, they will miss transcripts
 where a customer said *"I want to leave"* or *"thinking about switching"*.
 For voice analytics, this is a critical limitation.
  
-NovaPulse uses **vector search** — also called semantic search — to find
+NovaPulse uses **vector search** , also called semantic search, to find
 content based on meaning rather than exact words.
  
 ---
@@ -50,7 +50,7 @@ A support manager queries:
 ```
  
 NovaPulse returns relevant calls even if they contain none of those
-exact words — including transcripts where customers said *"this charge
+exact words, including transcripts where customers said *"this charge
 makes no sense"*, *"I'm really annoyed about this invoice"*, or
 *"nobody explained the fees to me"*.
  
@@ -58,8 +58,8 @@ makes no sense"*, *"I'm really annoyed about this invoice"*, or
  
 ## Hybrid search
  
-For queries involving exact terms — product names, error codes,
-or precise phrases — pure semantic search can underperform.
+For queries involving exact terms: product names, error codes,
+or precise phrases, pure semantic search can underperform.
 NovaPulse supports **hybrid search** that combines:
  
 | Method | Strengths |
