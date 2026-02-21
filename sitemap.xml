@@ -57,7 +57,19 @@
          <lastmod>2026-02-21</lastmod>
     </url>
     <url>
-         <loc>https://BenovaTech.github.io/novapulse-docs/reference/</loc>
+         <loc>https://BenovaTech.github.io/novapulse-docs/kibana-lab/</loc>
+         <lastmod>2026-02-21</lastmod>
+    </url>
+    <url>
+         <loc>https://BenovaTech.github.io/novapulse-docs/kibana-lab/kibana-discover/</loc>
+         <lastmod>2026-02-21</lastmod>
+    </url>
+    <url>
+         <loc>https://BenovaTech.github.io/novapulse-docs/kibana-lab/kibana-index-data/</loc>
+         <lastmod>2026-02-21</lastmod>
+    </url>
+    <url>
+         <loc>https://BenovaTech.github.io/novapulse-docs/kibana-lab/kibana-lens/</loc>
          <lastmod>2026-02-21</lastmod>
     </url>
     <url>
@@ -78,10 +90,6 @@
     </url>
     <url>
          <loc>https://BenovaTech.github.io/novapulse-docs/release-notes/v1.0.0/</loc>
-         <lastmod>2026-02-21</lastmod>
-    </url>
-    <url>
-         <loc>https://BenovaTech.github.io/novapulse-docs/tutorials/</loc>
          <lastmod>2026-02-21</lastmod>
     </url>
     <url>
