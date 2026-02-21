@@ -140,6 +140,11 @@ nav:
   - Release Notes:
     - Changelog: release-notes/changelog.md
     - v1.0.0: release-notes/v1.0.0.md
+  - Kibana Lab:
+    - kibana-lab/index.md
+    - Index NovaPulse data: kibana-lab/kibana-index-data.md
+    - Explore with Discover: kibana-lab/kibana-discover.md
+    - Build a Lens dashboard: kibana-lab/kibana-lens.md
  
 # ── FOOTER & SOCIAL ───────────────────────────────────────────
 extra:
