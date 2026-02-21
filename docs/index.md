@@ -76,5 +76,5 @@ and autonomous voice agent capabilities through a single REST API.
     technical writing methodology for an AI SaaS platform.
     Built with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/),
     deployed via GitHub Actions, and maintained using a docs-as-code workflow.
-    — [Houda Benlemmouden](https://linkedin.com/in/houdab86)
+     [Houda Benlemmouden](https://linkedin.com/in/houdab86)
 

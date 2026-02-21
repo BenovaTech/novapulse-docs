@@ -16,9 +16,9 @@ Nothing here comes from reading documentation alone.
 
 | Page | What you will find |
 |---|---|
-| [Index NovaPulse data](index-novapulse-data.md) | Create an Elasticsearch index mapping, index 12 sample call records using Dev Tools, and verify the data |
-| [Explore with Discover](explore-with-discover.md) | Use KQL to filter by sentiment, team, resolution status, and score ranges |
-| [Build a Lens dashboard](build-lens-dashboard.md) | Build a 3-panel call analytics dashboard with a sentiment pie chart, daily volume by team, and agent performance chart |
+| [Index NovaPulse data](kibana-index-data) | Create an Elasticsearch index mapping, index 12 sample call records using Dev Tools, and verify the data |
+| [Explore with Discover](kibana-discover.md) | Use KQL to filter by sentiment, team, resolution status, and score ranges |
+| [Build a Lens dashboard](kibana-lens.md) | Build a 3-panel call analytics dashboard with a sentiment pie chart, daily volume by team, and agent performance chart |
 
 ---
 
