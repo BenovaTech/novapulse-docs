@@ -8,7 +8,7 @@ description: Hands-on Kibana exploration using NovaPulse call analytics data ind
 This section documents hands-on exploration of Kibana using NovaPulse call
 analytics data. Every page was written by actually building the things
 described: indexing data, running queries, and building visualizations.
-Nothing here comes from reading documentation alone.
+
 
 ---
 
@@ -42,8 +42,3 @@ directly relevant to the platform documented in this site, and demonstrates
 end-to-end thinking from API design through to data analysis.
 
 ---
-
-!!! note "About this lab"
-    These pages document real exploration, including problems encountered
-    and how they were solved. The goal is to show hands-on technical
-    curiosity and the ability to figure things out independently.
